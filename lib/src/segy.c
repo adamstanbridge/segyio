@@ -838,7 +838,12 @@ static int bswap_bin( char* xs, int lsb ) {
     const int bytes4[] = {
         SEGY_BIN_JOB_ID,
         SEGY_BIN_LINE_NUMBER,
-        SEGY_BIN_REEL_NUMBER
+        SEGY_BIN_REEL_NUMBER,
+        SEGY_BIN_EXT_TRACES,
+        SEGY_BIN_EXT_AUX_TRACES,
+        SEGY_BIN_EXT_SAMPLES,
+        SEGY_BIN_EXT_SAMPLES_ORIG,
+        SEGY_BIN_EXT_ENSEMBLE_FOLD
     };
 
     const int bytes4_len = sizeof(bytes4) / sizeof(int);
@@ -876,9 +881,8 @@ static int bswap_bin( char* xs, int lsb ) {
         SEGY_BIN_MEASUREMENT_SYSTEM,
         SEGY_BIN_IMPULSE_POLARITY,
         SEGY_BIN_VIBRATORY_POLARITY,
-        SEGY_BIN_SEGY_REVISION,
         SEGY_BIN_TRACE_FLAG,
-        SEGY_BIN_EXT_HEADERS,
+        SEGY_BIN_EXT_HEADERS
     };
 
     const int bytes2_len = sizeof( bytes2 ) / sizeof( int );

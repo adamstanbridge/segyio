@@ -1,2 +1,7 @@
 python/segyio/version.py
 python/segyio/segyio.dll
+python/segyio/*.so
+python/.eggs
+python/_skbuild
+.vscode
+build
